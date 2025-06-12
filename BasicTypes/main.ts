@@ -53,3 +53,12 @@ let isStudent: boolean = true;
 
 console.log(`Hi, my name is ${myName}. I'm ${myAge} years old. Am I a student? ${isStudent}`);
 
+
+// duck typing
+
+let complexType = {
+    myName : " Jayavel",
+    id : 22
+};
+
+complexType = {myName : "sanjay", id :4}

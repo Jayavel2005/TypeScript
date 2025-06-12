@@ -26,3 +26,9 @@ var myName = "Jayavle";
 var myAge = 20;
 var isStudent = true;
 console.log("Hi, my name is ".concat(myName, ". I'm ").concat(myAge, " years old. Am I a student? ").concat(isStudent));
+// duck typing
+var complexType = {
+    myName: " Jayavel",
+    id: 22
+};
+complexType = { myName: "sanjay", id: 4 };
