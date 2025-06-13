@@ -49,3 +49,32 @@ names = names.map(function (userName) { return userName.toUpperCase(); });
 console.log(names);
 var validNames = names.filter(function (userName) { return userName.length > 6; });
 console.log(validNames);
+// Tuples
+// 🎯 Chapter: Tuples in TypeScript
+// 📦 What is a Tuple?
+// A tuple is an array with:
+// Fixed length
+// Fixed types in specific positions
+// It's perfect when you know exactly how many values and what type each one should be.
+var user = ["Jayavel", 22];
+// Explanation:
+// Position 0 must be a string
+// Position 1 must be a number
+// let user: [string, number] = [21, "Jayavel"]; // ❌ Wrong order
+// let user: [string, number] = ["Jayavel", 21, true]; // ❌ Too many values
+// Destructuring Tuples
+// ts
+// Copy
+// Edit
+var person = ["Jayavel", 21];
+var usrename = person[0], age = person[1];
+console.log(usrename); // Jayavel
+console.log(age); // 21
+var book = ["The art of being alone", 290];
+var bookName = book[0], price = book[1];
+;
+console.log("Book Name: ".concat(bookName, " and Price: ").concat(price));
+var product = ["Cricket Bat", 290, true];
+var student = ["Arun", 19];
+var studentName = student[0], studentAge = student[1];
+console.log(studentName, studentAge);
